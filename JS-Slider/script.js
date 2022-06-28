@@ -1,7 +1,8 @@
 window.addEventListener("load", function(){
     const slideCount = document.querySelectorAll("#slider-wrapper ul li").length;
-    const slideWidth = document.querySelectorAll("#slider-wrapper").offsetWidth;
+    const slideWidth = document.querySelector("#slider-wrapper").offsetWidth;
     const totalWidth = slideCount * slideWidth + "px";
+    alert(totalWidth);
 
     const slider = document.querySelector("#slider-wrapper ul");
     const next = document.querySelector("#next");
