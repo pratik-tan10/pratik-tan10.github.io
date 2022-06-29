@@ -28,9 +28,30 @@ $(window).on("load", function(){
             leftPosition = `-${(counter*imageWidth)}`;
         $("#slider ul").animate({left: leftPosition}, 700, "easeInQuad");
         }
-        
-
     });
+
+    function slider(){
+        counter++;
+        if (counter==imageCount){
+
+            $("#slider ul").clone().appendTo("#slider");
+            $("#slider ul").last().css("left", imageWidth + "px");
+
+            leftPosition = `-${totalWidth}`;
+
+            $("#slider ul").last().animate({left: 0}, 700, "easeInQuad");
+            $("#slider ul").first().animate({left: leftPosition}, 700, "easeInQuad", function(){
+                $("#slider ul").first().remove();
+            });
+
+            counter = 0;
+        } else {
+            leftPosition = `-${(counter*imageWidth)}`;
+        $("#slider ul").animate({left: leftPosition}, 700, "easeInQuad");
+        }
+    }
+    let timer = setInterval(slider, 2000);
+
     $("#previous").click(function(){
         counter--;
         if(counter<0){
@@ -55,5 +76,12 @@ $(window).on("load", function(){
 
     });
 
+    $("#slider ul li").mouseenter(function(){
+        clearInterval(timer);
+    });
+
+    $("#slider ul li").mouseleave(function(){
+        timer = setInterval(slider, 2000);
+    });
 });
 
