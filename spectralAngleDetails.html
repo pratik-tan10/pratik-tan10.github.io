@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Details - Spectral Angle Mapper</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: MyResume
+  * Updated: Mar 10 2023 with Bootstrap v5.2.3
+  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <main id="main">
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/spectralAngle.png" alt="">
+                </div>
+
+                <!-- <div class="swiper-slide"> -->
+                  <!-- <img src="assets/img/portfolio/databaseSplitSecond.png" alt=""> -->
+                <!-- </div> -->
+
+                <!-- <div class="swiper-slide"> -->
+                  <!-- <img src="assets/img/portfolio/databaseSplitThird.png" alt=""> -->
+                <!-- </div> -->
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="portfolio-info">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Category</strong>: GIS Development</li>
+                <li><strong>Skills Used</strong>: Python, numpy, Hyperspectral Image Processing, Image Processing, Remote Sensing</li>
+                <li><strong>Learn More at</strong>: <a href="https://github.com/pratik-tan10/Python/tree/main/Notebooks/Spectral%20angle%20mapper" target="_blank">Python Implementation of Spectral Angle mapper</a></li>
+              </ul>
+            </div>
+            <div class="portfolio-description">
+              <h2>Summary:</h2>
+              <p>
+			  
+
+                The Spectral Angle Mapper is a tool used in remote sensing and image processing to classify and identify materials
+				based on their spectral signatures.<br>A spectral vector is an n_B-dimensional vector,
+				where each component of the vector is its reflectance in the corresponding band. 
+				By calculating the angle between two spectral vectors, we can determine the similarity of the materials they represent. 
+				<br>
+				This classification is not affected by changes in illumination that affect all bands in a similar way, 
+				as it only considers the angle and not the magnitude of the spectral vector.<br>
+				In this project, the concept of spectral angle mapping classification is generalized
+				from 2D to higher dimensional vectors. It uses the <span style="background-color:white;">np.linalg.norm </span> method to 
+				calculate the length of the spectral signature and np.dot method to calculate their dot products.<br>
+				For vectors <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+				  <mrow class="MJX-TeXAtom-ORD">
+					<mover>
+					  <mrow class="MJX-TeXAtom-ORD">
+						<mtext mathvariant="bold">p</mtext>
+					  </mrow>
+					  <mo stretchy="false">&#x005E;<!-- ^ --></mo>
+					</mover>
+				  </mrow>
+				  <mo>and </mo>
+				  <mrow class="MJX-TeXAtom-ORD">
+					<mover>
+					  <mrow class="MJX-TeXAtom-ORD">
+						<mtext mathvariant="bold">q</mtext>
+					  </mrow>
+					  <mo stretchy="false">&#x005E;<!-- ^ --></mo>
+					</mover>
+				  </mrow>
+				</math>their dot product is given by the formula,<br>
+				
+				<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+				  <mi>cos</mi>
+				  <mo>&#x2061;<!-- ⁡ --></mo>
+				  <mi>&theta;</mi>
+				  <mo>=</mo>
+				  <mstyle displaystyle="true" scriptlevel="0">
+					<mfrac>
+					  <mrow>
+						<mrow class="MJX-TeXAtom-ORD">
+						 <mover>
+					  <mrow class="MJX-TeXAtom-ORD">
+						<mtext mathvariant="bold">p</mtext>
+					  </mrow>
+					  <mo stretchy="false">&#x005E;<!-- ^ --></mo>
+					</mover>
+						</mrow>
+						<mo>&#x22C5;<!-- ⋅ --></mo>
+						<mover>
+					  <mrow class="MJX-TeXAtom-ORD">
+						<mtext mathvariant="bold">q</mtext>
+					  </mrow>
+					  <mo stretchy="false">&#x005E;<!-- ^ --></mo>
+					</mover>
+					  </mrow>
+					  <mrow>
+						<mrow class="MJX-TeXAtom-ORD">
+						  <mo stretchy="false">|</mo>
+						</mrow>
+						<mrow class="MJX-TeXAtom-ORD">
+						  <mo stretchy="false">|</mo>
+						</mrow>
+						<mover>
+					  <mrow class="MJX-TeXAtom-ORD">
+						<mtext mathvariant="bold">p</mtext>
+					  </mrow>
+					  <mo stretchy="false">&#x005E;<!-- ^ --></mo>
+					</mover>
+						<mrow class="MJX-TeXAtom-ORD">
+						  <mo stretchy="false">|</mo>
+						</mrow>
+						<mrow class="MJX-TeXAtom-ORD">
+						  <mo stretchy="false">|</mo>
+						</mrow>
+						<mrow class="MJX-TeXAtom-ORD">
+						  <mo stretchy="false">|</mo>
+						</mrow>
+						<mrow class="MJX-TeXAtom-ORD">
+						  <mo stretchy="false">|</mo>
+						</mrow>
+						<mover>
+					  <mrow class="MJX-TeXAtom-ORD">
+						<mtext mathvariant="bold">q</mtext>
+					  </mrow>
+					  <mo stretchy="false">&#x005E;<!-- ^ --></mo>
+					</mover>
+						<mrow class="MJX-TeXAtom-ORD">
+						  <mo stretchy="false">|</mo>
+						</mrow>
+						<mrow class="MJX-TeXAtom-ORD">
+						  <mo stretchy="false">|</mo>
+						</mrow>
+					  </mrow>
+					</mfrac>
+				  </mstyle>
+				</math>
+				
+				
+				Where <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+				  <mrow>
+						<mrow class="MJX-TeXAtom-ORD">
+						  <mo stretchy="false">|</mo>
+						</mrow>
+						<mrow class="MJX-TeXAtom-ORD">
+						  <mo stretchy="false">|</mo>
+						</mrow>
+						<mover>
+					  <mrow class="MJX-TeXAtom-ORD">
+						<mtext mathvariant="bold">p</mtext>
+					  </mrow>
+					  <mo stretchy="false">&#x005E;<!-- ^ --></mo>
+					</mover>
+						<mrow class="MJX-TeXAtom-ORD">
+						  <mo stretchy="false">|</mo>
+						</mrow>
+						<mrow class="MJX-TeXAtom-ORD">
+						  <mo stretchy="false">|</mo>
+						</mrow>
+				</math>		and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+				  <mrow>
+						<mrow class="MJX-TeXAtom-ORD">
+						  <mo stretchy="false">|</mo>
+						</mrow>
+						<mrow class="MJX-TeXAtom-ORD">
+						  <mo stretchy="false">|</mo>
+						</mrow>
+						<mover>
+					  <mrow class="MJX-TeXAtom-ORD">
+						<mtext mathvariant="bold">p</mtext>
+					  </mrow>
+					  <mo stretchy="false">&#x005E;<!-- ^ --></mo>
+					</mover>
+						<mrow class="MJX-TeXAtom-ORD">
+						  <mo stretchy="false">|</mo>
+						</mrow>
+						<mrow class="MJX-TeXAtom-ORD">
+						  <mo stretchy="false">|</mo>
+						</mrow>
+				</math>	are the lengths of vectors <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+				  <mo> </mo>
+				  <mrow class="MJX-TeXAtom-ORD">
+					<mover>
+					  <mrow class="MJX-TeXAtom-ORD">
+						<mtext mathvariant="bold">p</mtext>
+					  </mrow>
+					  <mo stretchy="false">&#x005E;<!-- ^ --></mo>
+					</mover>
+				  </mrow>
+				  <mo>and </mo>
+				  <mrow class="MJX-TeXAtom-ORD">
+					<mover>
+					  <mrow class="MJX-TeXAtom-ORD">
+						<mtext mathvariant="bold">q</mtext>
+					  </mrow>
+					  <mo stretchy="false">&#x005E;<!-- ^ --></mo>
+					</mover>
+				  </mrow>
+				</math><br>, respectively, 
+				and θ is the angle between them.<br>
+				By implementing the Spectral Angle Mapper, we can accurately classify and identify materials 
+				in remote sensing and image processing applications.
+			  </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
+
