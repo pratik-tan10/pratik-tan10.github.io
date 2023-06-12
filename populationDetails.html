@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Details - Little Lemon</title>
+  <title>Details - US Population Dynamic Map</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -51,15 +51,15 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/DatabaseModeling.png" alt="">
+                  <img src="assets/img/portfolio/populationDetails1.jpg" alt="">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/bars.png" alt="">
+                  <img src="assets/img/portfolio/populationDetails2.jpg" alt="">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/bubbles.png" alt="">
+                  <img src="assets/img/portfolio/populationDetails3.jpg" alt="">
                 </div>
 
               </div>
@@ -71,18 +71,27 @@
             <div class="portfolio-info">
               <h3>Project information</h3>
               <ul>
-                <li><strong>Category</strong>: Database Development / Data Analysis</li>
-                <li><strong>Skills Used</strong>: Database Modeling, MySQL, MySQL Workbench, Python, Tableau</li>
-                <li><strong>Learn More at</strong>: <a href="https://github.com/pratik-tan10/little-lemon" target="_blank">Little Lemon Resturant</a></li>
+                <li><strong>Category</strong>: GIS Development</li>
+                <li><strong>Skills Used</strong>: ArcMap, html, JavaScript, Python</li>
+                <li><strong>Source Code</strong>: <a href="https://github.com/pratik-tan10/time-enabled-mapping" target="_blank">GitHub: Time-enabled-mapping</a></li>
+				<li><strong>View it Live</strong>: <a href="https://pratik-tan10.github.io/time-enabled-mapping/simpleWebMap" target="_blank">US Population Throughout the Years</a></li>
               </ul>
             </div>
             <div class="portfolio-description">
               <h2>Summary:</h2>
               <p>
-                In this project, we used MySQL Workbench for modeling a database for LittleLemon restaurant and deployed the model as MySQL database.
-				We also created several stored procedures for enabling secure CRUD operations using transactions and generating sales reports.
-				We used Tableau to perform data analytics using relevant charts and dashboards.
-				MySQL Python Connector was also used to create python client for executing sql queries from jupyter notebook.
+                This is a time-enabled map of annual US states populations from 1950 to 2021.<br>
+				Data was obtained from uasfacts website, in csv format, which was joined to US states polygons.<br>
+				First the web-map was created using ArcMap by utilitng time-enabled layer, transposing the data from wide to long format, year extraction using field calculator,
+				addinng the lost states names via spatial join and exporting static maps for each year using python scripts.
+				These static images were converted to a basic dynamic maps using HTML and CSS, where based on the year selected by the user on time-slider, the displayed map 
+				is updated. It also had a button to toggle pause/play of animation.<br>
+				After this, a to created a truly dynamic web-map, a diffrent approch was taken, which used python simplifying the polygons, joining population data
+				to the polygons, and to export them as geojson file. The geojson file was uploaded to github, then using JavaScript, the file was read and extracted.
+				A leaflet map was created, where the States polygons are added, with labels and colors based on the year the user specified through an interactive time-slider
+				to create a choropleth map, where colors are porportinal to the population.
+				<br>
+				The map can be accessed at <a href="https://pratik-tan10.github.io/time-enabled-mapping/simpleWebMap" target="_blank">Us Population Throughout the Years</a>
 			  </p>
             </div>
           </div>
