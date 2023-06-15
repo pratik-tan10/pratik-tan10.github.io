@@ -17,14 +17,27 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="preload" as = "style">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="preload" as = "style">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="preload" as = "style">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="preload" as = "style">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="preload" as = "style">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  
+  
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="preload" as = "style">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
+  <link id = "maintheme" href="assets/css/style.css" rel="preload" as = "style">
   <link id = "maintheme" href="assets/css/style.css" rel="stylesheet">
 
   <!-- =======================================================
@@ -63,7 +76,7 @@
   <section id="hero" class="d-flex flex-column justify-content-center">
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
       <h1>Pratik Dhungana</h1>
-      <p>I'm <span class="typed" data-typed-items="Spatial Data Scientist, GIS Engineer, Computer Vision Enthusiast, Cartographer"></span></p>
+      <p>I am a <span class="typed" data-typed-items="Spatial Data Scientist, GIS Engineer, Cartographer, Computer Vision Enthusiast"></span></p>
       <div class="social-links">
         <!--<a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
         <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
@@ -378,7 +391,7 @@
                 <li>Implemented the Spectral Angle Mapper algorithm in Python. </li>
                 <li>Multispectral Satellite Image Semantic Segmentation Using Neural Network. </li>
                 <li>Created an interactive web map of recreational places in and around Pokhara City.</li>
-                <li>Developed a building foot-print extraction model using Support Vector Machine.</li>
+                <li>Developed a building foot-print extraction model using U-Net.</li>
                 <li>Analyzed the Spatio-temporal pattern of snow-cover changes in Nepal with cloud-based remote sensing.</li>
                 <li>Designed and developed the PostgreSQL database of the student records along with their spatial location information in PostGIS.</li>
               </ul>
@@ -420,9 +433,9 @@
               <ul>
                 <li>Led a team of 6 engineers in designing a national topographic database and automating the migration of data from 
 				older versions to newer versions; Created specifications for database, symbols, and map layout.</li>
-                <li>Automated data preprocessing, analysis, and map production workflow to reduce 7 weeks of manual work for 48 people each year, 
+                <li>Automated satellite image processing, GIS data preprocessing, analysis, and map production workflow to reduce 7 weeks of manual work for 48 people each year, 
 				Reconciled schema and domain conflict between past national land use databases.</li>
-                <li>Provided monthly training on GIS, cartography, and data analysis as well as on custom tools to teams of up to 
+                <li>Provided monthly training on Remote Sensing, GIS, cartography, and data analysis as well as on custom tools to teams of up to 
 				56 GIS professionals to help them adapt to the updated workflow.</li>
                 <li>Led a team of national topographic database update program from planning to final database production with 
 				agile project management practice, performed quality control, and maintained meta-data for the produced data.</li>
@@ -511,6 +524,34 @@
                 <div class="portfolio-links">
                   <a href="assets/img/portfolio/databaseSplit.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="ArcGIS Python Script tool for Clipping Large Geodatabases"><i class="bx bx-plus"></i></a>
                   <a href="databaseSplitDetails.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+		  
+		  <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/Sat2Map.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Satellite Image to Google Map conversion using Pix2Pix Generative Adversarial Network.</h4>
+                <p>Computer Vision</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/Sat2Map.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Object Based Satellite Image Classification with ArcMap and Neural Network"><i class="bx bx-plus"></i></a>
+                  <a href="sat2mapDetails.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+		  
+		  <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/cars.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Car detection using YOLO.</h4>
+                <p>Computer Vision</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/cars.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Cars Detection using YOLO"><i class="bx bx-plus"></i></a>
+                  <a href="carsDetails.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
