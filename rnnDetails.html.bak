@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Details - Satellite Image Segmentation using U-Net</title>
+  <title>Details - Temperature Prediction using RNN</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -51,15 +51,15 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/Unet.png" alt="">
+                  <img src="assets/img/portfolio/RNNDetails1.png" alt="">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/Unet1.jpg" alt="">
+                  <img src="assets/img/portfolio/RNNDetails2.png" alt="">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/Unet2.png" alt="">
+                  <img src="assets/img/portfolio/RNNDetails3.png" alt="">
                 </div>
 
               </div>
@@ -71,30 +71,22 @@
             <div class="portfolio-info">
               <h3>Project information</h3>
               <ul>
-                <li><strong>Category</strong>: Computer Vision</li>
-                <li><strong>Skills Used</strong>: Python, TensorFlow, Satellite Image, Image Segmentation, U-Net</li>
-                <li><strong>Find notebook here</strong>: <a href="https://github.com/pratik-tan10/Python/blob/main/Notebooks/Deepglobe/deepglobe_land_cover_classification.ipynb" target="_blank">GitHub: Satellite Image Segmentation using U-Net</a></li>
+                <li><strong>Category</strong>: Spatio-temporal Analysis</li>
+                <li><strong>Skills Used</strong>: Python, TensorFlow, RNN, Time-series forecasting</li>
+                <li><strong>Learn more here</strong>: <a href="https://github.com/pratik-tan10/ML-notebooks/tree/main/RNN%20for%20time%20series" target="_blank">GitHub: Temperature Prediction using RNN</a></li>
 				</ul>
             </div>
             <div class="portfolio-description">
               <h2>Summary:</h2>
               <p>
-				This project aims to perform land cover classification on satellite images using deep learning techniques. 
-				Land cover classification is the process of assigning labels to different regions of an image based on their surface characteristics, such as vegetation, water, urban areas, etc. This task is important for various applications, such as environmental monitoring, disaster management, urban planning, and more.
+				In this project, using a time series of Daily Minimum Temperatures in Melbourne from 1981 to 1990,
+				a neural network model contaiining RNN and Conv1D layers was built to predict the Daily Minimum Tempereature for Melbourne in the future.
 				<br>
-				The project uses a UNet architecture, which is a type of convolutional neural network that consists of an encoder and a decoder. 
-				The encoder extracts features from the input image, while the decoder reconstructs the output image with the desired labels. 
-				The UNet also has skip connections that allow information to flow from the encoder to the decoder at different levels of resolution, which helps preserve spatial details and reduce errors.
+				Here, <strong>TensorFlow</strong> was used for building the neural network model, and <strong>keras-tuner</strong> was used to automate the
+				hyperparameter tuning process.
 				<br>
-				The project also explores three different models from the segmentation_models library, which provides pre-trained backbones 
-				for various segmentation tasks. The models are ResNet34, EfficientNetB0, and VGG16. These models are used as the 
-				encoder part of the UNet, while the decoder part remains the same. The project compares the performance of these models on 
-				the DeepGlobe Land Cover Classification Challenge dataset, which contains high-resolution satellite images from 
-				different continents and seasons.
-				<br>
-				The project evaluates the models using two metrics: pixel accuracy and mean intersection over union (mIoU). 
-				Pixel accuracy measures the percentage of pixels that are correctly classified, while mIoU measures the average overlap between the predicted and ground truth regions for each class. The project also visualizes some examples of the segmentation results.
-			  </p>
+				<strong>Mean Absolute Error (MAE)</strong> was used as the loss metric, and the model was able to achieve 2 MAE of less than on the validation data.
+				</p>
             </div>
           </div>
 
